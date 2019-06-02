@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #2b2828;
+    background-color: #FAF0E6;
+}
+
+.container {
+    margin: 120px auto;
+    width: 600px;
+    border: none;
+}
+
+.result {
+    min-height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+.game-title {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+.game {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #FAF0E6;
+    color: #fff;
+}
+
+.cell {
+    float: left;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 4px solid #2b2828;
+    text-align: center;
+    line-height: 100px;
+    font-size: 66px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all linear .3s;
+    user-select: none;
+    box-shadow: 0 0 1px;
+}
+
+.cell:hover {
+    background-color: #2b2828;
+}
+
+.cell.x {
+    background-color: #2b2828;
+}
+
+.cell.o {
+    background-color: #2b2828;
+}
+
+.reset {
+    text-decoration: none;
+    outline: none;
+    height: 40px;
+    border-radius: 45px;
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #FAF0E6;
+    transition: .4s;
+    padding: 10px 20px;
+    border: none;
+    user-select: none;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    box-shadow: 0 0 10px;
+
+}
+
+.reset:hover {
+    background: #2b2828;
+    color: white;
+    transform: translateY(-5px);
+    font-size: 14px;
+}
+
+@keyframes scal {
+    from {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(1.1);
+    }
+    66% {
+        transform: scale(1.15);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.cell:not(.o):not(.x):hover {
+    animation: scal .5s linear infinite;
+}
+
+.count {
+    font-family: 'Gloria Hallelujah', cursive;
+    user-select: none;
+    font-size: 150px;
+    position: absolute;
+}
+
+#countX {
+    top: 41%;
+    left: 23%;
+}
+
+#countO {
+    top: 41%;
+    right: 23%;
+}
+
+.name {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+.project {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #2b2828;
+}
+
+.headerline {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #2b2828;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #2b2828;
+}
+
+.arrowO {
+    height: 250px;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 19%;
+    top: 20%;
+    user-select: none;
+}
+
+.arrowX {
+    height: 250px;
+    position: absolute;
+    transform: rotate(90deg) scale(1, -1);
+    left: 19%;
+    top: 20%;
+    user-select: none;
+}
+
+.badge {
+    margin: 25px 22px 0;
+    position: relative;
+    left: 37%;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .badge {
+        left: 26%;
+    }
+
+    .headerline {
+        top: 11%;
+    }
+
+    .arrowX {
+        height: 230px;
+        top: 29%;
+        left: 2%;
+        transform: rotate(65deg) scale(1, -1);
+    }
+
+    .arrowO {
+        height: 230px;
+        top: 29%;
+        right: 2%;
+        transform: rotate(115deg);
+    }
+
+    #countX {
+        top: 53%;
+        left: 16%;
+    }
+
+    #countO {
+        top: 53%;
+        right: 16%;
+    }
+
+    .footer {
+        bottom: -25%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .arrowO,.arrowX{
+        display: none;
+    }
+    .headerline{
+        top: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

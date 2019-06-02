@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header"></div>
+<div class="headerline"></div>
+<div class="container">
+    <img class="arrowX" src="arrow.png" ondragstart="return false;">
+    <img class="arrowO" src="arrow.png" ondragstart="return false;">
+    <div class="name">Крестики-Нолики</div>
+    <div class="project">(a project made by Daniil Netkachev)</div>
+    <div class="result" id="result-game"></div>
+    <span class="game-title" id="message">Ходит игрок X</span>
+    <div class="game" id="game">
+        <div class="cell" data-sell="1"></div>
+        <div class="cell" data-sell="2"></div>
+        <div class="cell" data-sell="3"></div>
+        <div class="cell" data-sell="4"></div>
+        <div class="cell" data-sell="5"></div>
+        <div class="cell" data-sell="6"></div>
+        <div class="cell" data-sell="7"></div>
+        <div class="cell" data-sell="8"></div>
+        <div class="cell" data-sell="9"></div>
+    </div>
+    <button class="reset" id="reset-game">Новая игра</button>
+    <button class="reset" id="reset-count">Сбросить очки</button>
+</div>
+<div class="count" id="countX">0</div>
+<div class="count" id="countO">0</div>
+<div class="footer">
+    <a href="https://vk.com/dani__el"><img class="badge" src="facebook.svg" ondragstart="return false;"></a>
+    <a href="https://vk.com/dani__el" ><img class="badge" src="twitter.svg" ondragstart="return false;"></a>
+    <a href="https://github.com/babulehh"><img class="badge" src="github.svg" ondragstart="return false;"></a>
+    <a href="https://vk.com/dani__el"><img class="badge" src="instagram.svg" ondragstart="return false;"></a>
+    <a href="https://vk.com/dani__el"><img class="badge" src="vk.svg" ondragstart="return false;"></a>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
