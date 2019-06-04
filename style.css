@@ -209,7 +209,9 @@ body {
     cursor: pointer;
     user-select: none;
 }
-
+.badge:hover{
+    animation: scal 800ms infinite;
+}
 @media screen and (max-width: 1024px) {
     .badge {
         left: 26%;
